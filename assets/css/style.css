@@ -19,35 +19,81 @@ body {
     color: white;
     position: fixed;
     padding: 25px 20px;
+    box-shadow: 4px 0 15px rgba(15, 23, 42, 0.08);
 }
 
+/* Business Logo */
+
 .logo {
-    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 5px 8px 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.logo::before {
+    content: "S";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    background: #f59e0b;
+    color: #172554;
+    font-size: 23px;
+    font-weight: 800;
+    border-radius: 11px;
+    box-shadow: 0 4px 10px rgba(245, 158, 11, 0.2);
 }
 
 .logo span {
-    color: #f59e0b;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
 }
 
+/* Navigation Labels */
+
 .nav-label {
-    font-size: 11px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
     color: #94a3b8;
     margin: 25px 0 12px;
+    padding-left: 12px;
 }
+
+/* Navigation Links */
 
 .nav-link {
     display: block;
     color: #cbd5e1;
     text-decoration: none;
-    padding: 12px;
+    padding: 12px 14px;
     border-radius: 8px;
     margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.25s ease;
+    border-left: 3px solid transparent;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    padding-left: 18px;
+}
+
 .nav-link.active {
     background: #1e40af;
-    color: white;
+    color: #ffffff;
+    font-weight: 600;
+    border-left: 3px solid #f59e0b;
 }
 
 /* Main Content */
